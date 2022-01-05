@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+  <name><![CDATA[<b style="color:#1a8cff">Easy </b>PHPMyAdmin]]></name>
+  <code>Easy_PHPMyAdmin</code>
+  <version>1.0</version>
+  <author><![CDATA[<span class="label label-primary">Webxperia</span>]]></author>
+  <link>https://github.com/webxperia</link>
+  
+  	<file path="admin/view/template/common/header.twig">
+		<operation error="skip">
+			<search><![CDATA[<ul class="nav navbar-nav navbar-right">]]></search>
+			<add position="after"><![CDATA[
+	  <li style="padding: 20px 10px 20px 10px;">
+		<div class="btn-group">
+<a target="_blank" href="/admin/ocadminer/adminer.php"><i class="fa fa-database fa-lg" style="color: #3c8dbc;"></i> Mysql</a>
+			</button>
+		</div>
+	  </li>
+		]]></add>
+		</operation>
+	</file>
+
+</modification>
